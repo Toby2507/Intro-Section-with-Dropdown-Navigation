@@ -987,6 +987,11 @@ video {
 }
 
 @media (min-width: 976px){
+  .lg\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:block{
     display: block;
   }
