@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Toby2507/Intro-Section-with-Dropdown-Navigation)
-- [Live site URL](https://your-live-site-url.com)
+- [Live site URL](https://toby2507.github.io/Intro-Section-with-Dropdown-Navigation/)
 
 ### Built with
 
