@@ -1,0 +1,24 @@
+{
+  "name": "isdn",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toby2507/Intro-Section-with-Dropdown-Navigation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toby2507/Intro-Section-with-Dropdown-Navigation/issues"
+  },
+  "homepage": "https://github.com/Toby2507/Intro-Section-with-Dropdown-Navigation#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
+}

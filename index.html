@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/5ca15c60cd.js" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body class="font-poppins bg-almostWhite">
+  <header role="banner">
+    <nav class="flex flex-col space-y-3 container mx-auto px-3 py-5 lg:flex-row lg:space-y-0 lg:space-x-16 lg:items-center xl:space-x-20">
+      <div class="flex justify-between items-center">
+        <img src="./images/logo.svg" alt="logo" class="-mb-2">
+        <i class="open-sidebar fa-solid fa-bars text-2xl cursor-pointer lg:hidden"></i>
+      </div>
+      <!-- desktop menu -->
+      <div class="hidden flex-1 justify-between items-center lg:flex ">
+        <ul class="flex items-center space-x-8 xl:space-x-14">
+          <li class="dropdown relative">
+            <a href="#" class="text-base font-medium text-mediumGray capitalize hover:text-black">features<i class="fa-solid fa-angle-down text-xs pl-1"></i></a>
+            <ul class="hidden absolute -left-12 right-0 mt-4 flex flex-col space-y-2 py-3 px-4 shadow-xl rounded-md bg-white">
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize"><img src="./images/icon-todo.svg" alt="todo icon" class="inline mr-2">todo list</a></li>
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize"><img src="./images/icon-calendar.svg" alt="todo icon" class="inline mr-2">calendar</a></li>
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize"><img src="./images/icon-reminders.svg" alt="todo icon" class="inline mr-2">reminders</a></li>
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize"><img src="./images/icon-planning.svg" alt="todo icon" class="inline mr-2">planning</a></li>
+            </ul>
+          </li>
+          <li class="dropdown relative">
+            <a href="#" class="text-base font-medium text-mediumGray capitalize hover:text-black">company<i class="fa-solid fa-angle-down text-xs pl-1"></i></a>
+            <ul class="hidden absolute left-0 -right-4 mt-4 flex flex-col space-y-2 py-3 px-4 shadow-xl rounded-md bg-white">
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize">history</a></li>
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize">our team</a></li>
+              <li><a href="#" class="text-mediumGray text-sm font-medium capitalize">blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="text-base font-medium text-mediumGray capitalize hover:text-black">careers</a></li>
+          <li><a href="#" class="text-base font-medium text-mediumGray capitalize hover:text-black">about</a></li>
+        </ul>
+        <div class="flex items-center space-x-8">
+          <a href="#" class="text-base font-medium text-mediumGray capitalize px-3 py-2 hover:text-black">login</a>
+          <a href="#" class="text-base font-medium text-mediumGray capitalize px-4 py-1 rounded-xl border-2 border-mediumGray hover:border-black hover:text-black">register</a>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile menu -->
+    <aside class="sidebar flex flex-col px-6 py-5 h-screen fixed top-0 right-0 bg-white w-80 translate-x-full transition-all duration-700">
+      <i class="close-sidebar fa-solid fa-xmark text-4xl cursor-pointer mb-6"></i>
+      <div class="flex flex-col space-y-8">
+        <ul class="flex flex-col space-y-8">
+          <li class="dropdown flex flex-col space-y-8">
+            <a href="#" class="text-lg font-medium text-mediumGray capitalize hover:text-black">features<i class="fa-solid fa-angle-down text-xs pl-1"></i></a>
+            <ul class="hidden flex flex-col space-y-6 pl-8">
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize"><img src="./images/icon-todo.svg" alt="todo icon" class="inline w-4 mr-3">todo list</a></li>
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize"><img src="./images/icon-calendar.svg" alt="todo icon" class="inline w-4 mr-3">calendar</a></li>
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize"><img src="./images/icon-reminders.svg" alt="todo icon" class="inline w-4 mr-3">reminders</a></li>
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize"><img src="./images/icon-planning.svg" alt="todo icon" class="inline w-4 mr-3">planning</a></li>
+            </ul>
+          </li>
+          <li class="dropdown flex flex-col space-y-8">
+            <a href="#" class="text-lg font-medium text-mediumGray capitalize hover:text-black">company<i class="fa-solid fa-angle-down text-xs pl-1"></i></a>
+            <ul class="hidden flex flex-col space-y-6 pl-8">
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize">history</a></li>
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize">our team</a></li>
+              <li><a href="#" class="text-mediumGray text-base font-medium capitalize">blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="text-lg font-medium text-mediumGray capitalize hover:text-black">careers</a></li>
+          <li><a href="#" class="text-lg font-medium text-mediumGray capitalize hover:text-black">about</a></li>
+        </ul>
+        <div class="flex flex-col items-center space-y-4">
+          <a href="#" class="text-lg font-medium text-mediumGray capitalize px-3 py-1 hover:text-black">login</a>
+          <a href="#" class="text-lg font-medium text-mediumGray capitalize px-4 py-1 rounded-xl border-2 border-mediumGray hover:border-black hover:text-black">register</a>
+        </div>
+      </div>
+    </aside>
+  </header>
+  <main role="main" class="container mx-auto my-8">
+    <div class="flex flex-col space-y-16 px-4 mx-auto lg:w-11/12 lg:flex-row-reverse lg:space-y-0 lg:space-x-8 lg:space-x-reverse lg:items-center">
+      <figure class="w-full">
+        <img src="./images/image-hero-mobile.png" alt="hero image" class="w-full object-contain mx-auto md:w-9/12 lg:hidden">
+        <img src="./images/image-hero-desktop.png" alt="hero image" class="hidden mx-auto object-contain lg:block xl:w-8/12">
+      </figure>
+      <div class="flex flex-col space-y-4 xl:space-y-12">
+        <h1 class="text-3xl font-epilogue text-center font-bold tracking-wide md:text-5xl lg:text-left xl:text-7xl">Make remote work</h1>
+        <p class="text-mediumGray text-center text-base font-medium pb-4 mx-auto md:w-10/12 lg:text-left lg:w-10/12">Get your team in sync, no matter your location. Streamling processes, create team rituals, and watch productivity soar.</p>
+        <button class="text-white px-6 py-3 bg-black rounded-lg w-max self-center lg:self-start">Learn more</button>
+        <div class="flex items-center justify-around pt-12">
+          <figure class="w-16 md:w-24"><img src="./images/client-databiz.svg" alt="databiz" class="w-full object-contain"></figure>
+          <figure class="w-16 md:w-24"><img src="./images/client-audiophile.svg" alt="audiophile" class="w-full object-contain"></figure>
+          <figure class="w-16 md:w-24"><img src="./images/client-meet.svg" alt="meet" class="w-full object-contain"></figure>
+          <figure class="w-16 md:w-24"><img src="./images/client-maker.svg" alt="maker" class="w-full object-contain"></figure>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
